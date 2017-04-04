@@ -89,10 +89,25 @@ int main(int argc, char **argv)
      */
     chatter_pub.publish(msg);
 
+    ROS_DEBUG_STREAM("The count is " << count);
+    ROS_INFO_STREAM("The program is working");
+    if((count % 5) == 0)
+    {
+      ROS_WARN_STREAM(count << " is divisible by 5.");
+    }
+    if((count % 10) == 0)
+    {
+      ROS_ERROR_STREAM(count << " is divisible by 10.");
+    }
+
     ros::spinOnce();
 
     loop_rate.sleep();
     ++count;
+  }
+  if(!ros::ok())
+  {
+	  ROS_FATAL_STREAM("Program is about to crash.");
   }
 
 
