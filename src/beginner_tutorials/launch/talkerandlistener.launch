@@ -1,0 +1,8 @@
+<launch>
+
+  <group ns="talkerlistener">
+    <node pkg="beginner_tutorials" name="talker_node" type="talker"></node>
+    <node pkg="beginner_tutorials" name="listener_node" type="listener"></node>
+  </group>
+
+</launch>
