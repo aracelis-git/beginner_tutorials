@@ -55,7 +55,7 @@ int main(int argc, char **argv)
    */
   ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
 
-  ros::ServiceServer reset_srv_ = n.advertiseService("Change_Output", resetCount);
+  ros::ServiceServer reset_srv_ = n.advertiseService("Reset_Count", resetCount);
 
   ros::Rate loop_rate(10);
 
