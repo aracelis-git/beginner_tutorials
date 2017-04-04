@@ -1,7 +1,16 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
+#include "beginner_tutorials/ResetCount.h"
 
 #include <sstream>
+
+bool resetCount(beginner_tutorials::ResetCount::Request  &req,
+                beginner_tutorials::ResetCount::Response &res)
+{
+  res.count = 0;
+  ROS_INFO("The count has been reset to ", res.count);
+  return true;
+}
 
 /**
  * This tutorial demonstrates simple sending of messages over the ROS system.
@@ -45,6 +54,8 @@ int main(int argc, char **argv)
    * buffer up before throwing some away.
    */
   ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
+
+  ros::ServiceServer reset_srv_ = n.advertiseService("Change_Output", resetCount);
 
   ros::Rate loop_rate(10);
 

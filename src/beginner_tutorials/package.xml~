@@ -7,7 +7,7 @@
   <maintainer email="viki@todo.todo">Aldrin Racelis</maintainer>
   <license>BSD</license>
   <url type="website">http://wiki.ros.org/beginner_tutorials</url>
-  <author email="viki@todo.todo">Aldrin Racelise</author>
+  <author email="viki@todo.todo">Aldrin Racelis</author>
 
   <buildtool_depend>catkin</buildtool_depend>
 

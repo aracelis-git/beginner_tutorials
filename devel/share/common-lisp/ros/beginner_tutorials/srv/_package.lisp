@@ -1,0 +1,15 @@
+(cl:defpackage beginner_tutorials-srv
+  (:use )
+  (:export
+   "RESETCOUNT"
+   "<RESETCOUNT-REQUEST>"
+   "RESETCOUNT-REQUEST"
+   "<RESETCOUNT-RESPONSE>"
+   "RESETCOUNT-RESPONSE"
+   "ADDTWOINTS"
+   "<ADDTWOINTS-REQUEST>"
+   "ADDTWOINTS-REQUEST"
+   "<ADDTWOINTS-RESPONSE>"
+   "ADDTWOINTS-RESPONSE"
+  ))
+
