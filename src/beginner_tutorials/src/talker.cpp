@@ -122,13 +122,13 @@ int main(int argc, char **argv)
       ROS_ERROR_STREAM(count << " is divisible by 10.");
     }
 
-      static tf::TransformBroadcaster br;
-  tf::Transform transform;
-  transform.setOrigin( tf::Vector3(-1.0, 1.0, 0.0) );
-  tf::Quaternion q;
-  q.setRPY(0, 0, 15);
-  transform.setRotation(q);
-  br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "world", "talk"));
+    static tf::TransformBroadcaster br;
+    tf::Transform transform;
+    transform.setOrigin( tf::Vector3(-1.0, 1.0, 0.0) );
+    tf::Quaternion q;
+    q.setRPY(0, 0, 15);
+    transform.setRotation(q);
+    br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "world", "talk"));
 
     ros::spinOnce();
 

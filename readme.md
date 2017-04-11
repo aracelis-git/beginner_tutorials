@@ -32,9 +32,24 @@ To use the service, run the talker and listener and use the following command
 
 	rosservice call /Reset_Count 
 
-To use the launch file
+To use the launch file with rosbag
 
-	roslaunch beginner_tutorials talkerandlistener.launch
+	roslaunch beginner_tutorials talkerandlistener.launch bagon:=true
+	
+To use the launch file without rosbag
+
+	roslaunch beginner_tutorials talkerandlistener.launch bagon:=false
+	
+To inspect the .bag file
+
+	rosbag info [filename.bag]
+	
+To play the .bag file with the listener node, first close all the terminals
+
+	roscore
+	source ./devel/setup.bash
+	rosrun beginner_tutorials listener
+	rosbag play [filename.bag]
 	
 
 ## Dependencies
