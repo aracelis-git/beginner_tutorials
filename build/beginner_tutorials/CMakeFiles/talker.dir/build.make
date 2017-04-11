@@ -81,6 +81,11 @@ talker_EXTERNAL_OBJECTS =
 
 /home/viki/catkin_ws/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.o
 /home/viki/catkin_ws/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/build.make
+/home/viki/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/indigo/lib/libtf.so
+/home/viki/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/indigo/lib/libtf2_ros.so
+/home/viki/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/indigo/lib/libactionlib.so
+/home/viki/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/indigo/lib/libmessage_filters.so
+/home/viki/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/indigo/lib/libtf2.so
 /home/viki/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/indigo/lib/libroscpp.so
 /home/viki/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 /home/viki/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so

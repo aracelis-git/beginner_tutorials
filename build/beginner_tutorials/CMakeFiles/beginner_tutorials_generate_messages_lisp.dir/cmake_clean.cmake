@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/beginner_tutorials_generate_messages_lisp"
   "/home/viki/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp"
+  "/home/viki/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/msg/Pose.lisp"
   "/home/viki/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/ResetCount.lisp"
   "/home/viki/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/AddTwoInts.lisp"
 )

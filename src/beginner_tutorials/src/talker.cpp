@@ -1,6 +1,9 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
+#include "std_msgs/Empty.h"
 #include "beginner_tutorials/ResetCount.h"
+#include "tf/transform_broadcaster.h"
+
 
 #include <sstream>
 
@@ -10,6 +13,17 @@ bool resetCount(beginner_tutorials::ResetCount::Request  &req,
   res.count = 0;
   ROS_INFO("The count has been reset to ", res.count);
   return true;
+}
+
+void poseCallback(const std_msgs::Empty::ConstPtr& msg)
+{
+  static tf::TransformBroadcaster br;
+  tf::Transform transform;
+  transform.setOrigin( tf::Vector3(-1.0, 1.0, 0.0) );
+  tf::Quaternion q;
+  q.setRPY(0, 0, 15);
+  transform.setRotation(q);
+  br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "world", "talk"));
 }
 
 /**
@@ -56,6 +70,7 @@ int main(int argc, char **argv)
   ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
 
   ros::ServiceServer reset_srv_ = n.advertiseService("Reset_Count", resetCount);
+  ros::Subscriber sub_tf = n.subscribe("talkpose", 10, &poseCallback);
 
   ros::Rate loop_rate(10);
 

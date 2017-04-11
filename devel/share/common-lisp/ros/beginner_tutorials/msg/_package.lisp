@@ -3,5 +3,7 @@
   (:export
    "<NUM>"
    "NUM"
+   "<POSE>"
+   "POSE"
   ))
 

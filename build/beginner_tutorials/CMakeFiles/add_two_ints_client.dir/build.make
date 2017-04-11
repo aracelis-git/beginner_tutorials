@@ -81,6 +81,11 @@ add_two_ints_client_EXTERNAL_OBJECTS =
 
 /home/viki/catkin_ws/devel/lib/beginner_tutorials/add_two_ints_client: beginner_tutorials/CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o
 /home/viki/catkin_ws/devel/lib/beginner_tutorials/add_two_ints_client: beginner_tutorials/CMakeFiles/add_two_ints_client.dir/build.make
+/home/viki/catkin_ws/devel/lib/beginner_tutorials/add_two_ints_client: /opt/ros/indigo/lib/libtf.so
+/home/viki/catkin_ws/devel/lib/beginner_tutorials/add_two_ints_client: /opt/ros/indigo/lib/libtf2_ros.so
+/home/viki/catkin_ws/devel/lib/beginner_tutorials/add_two_ints_client: /opt/ros/indigo/lib/libactionlib.so
+/home/viki/catkin_ws/devel/lib/beginner_tutorials/add_two_ints_client: /opt/ros/indigo/lib/libmessage_filters.so
+/home/viki/catkin_ws/devel/lib/beginner_tutorials/add_two_ints_client: /opt/ros/indigo/lib/libtf2.so
 /home/viki/catkin_ws/devel/lib/beginner_tutorials/add_two_ints_client: /opt/ros/indigo/lib/libroscpp.so
 /home/viki/catkin_ws/devel/lib/beginner_tutorials/add_two_ints_client: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 /home/viki/catkin_ws/devel/lib/beginner_tutorials/add_two_ints_client: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so

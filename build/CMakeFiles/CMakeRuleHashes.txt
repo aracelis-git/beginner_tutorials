@@ -1,21 +1,25 @@
 # Hashes of file build rules.
 7005e70a702fb097cfe956263d20d49c /home/viki/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h
 ff35a08f2fc363649d26539e4139af6c /home/viki/catkin_ws/devel/include/beginner_tutorials/Num.h
+c0e6d5b6c31aca216fff5ef82637139f /home/viki/catkin_ws/devel/include/beginner_tutorials/Pose.h
 c639e8fc076e05d9970bf8384a83d761 /home/viki/catkin_ws/devel/include/beginner_tutorials/Reset.h
 e44aac8f5c6bc046dc90cee4b6c0c581 /home/viki/catkin_ws/devel/include/beginner_tutorials/ResetCount.h
 f65db2d58d3262ab33bead82e73b75c3 /home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/_Num.py
+24e9ac10a99de76f1eecd7c1eced15c7 /home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/_Pose.py
 3a266f4e97c3637ba2a9c249a27ca345 /home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/__init__.py
 ccc9cb1e69e92ce347b6dd7064a3f8da /home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/_AddTwoInts.py
 e025da6b132b4acf77ba15b812a63bf1 /home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/_Reset.py
 994e8d3f71e9b10d520bbc27a3979df4 /home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/_ResetCount.py
 0fc4f42f85b0207ba2964f301ee6cf9d /home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/__init__.py
 7c0e4a7fa729b5ee597cef406657710a /home/viki/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp
+f07c4a1303e587b793821d3f23b533e8 /home/viki/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/msg/Pose.lisp
 073976eeeb91aed8d1258389b25d1050 /home/viki/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/AddTwoInts.lisp
 4e6f87d638fd6a10fb9480bc177f6cfb /home/viki/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/Reset.lisp
 5bc09b4077f795b6602496761ccd8297 /home/viki/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/ResetCount.lisp
 b85096dcfde47dbdfa15cce51c2c2d4b CMakeFiles/clean_test_results
 561588d0971e83b9acdda1ed85dba15f beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_AddTwoInts
 9dcc196bd8695e50fb94482ff14ccb52 beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Num
+8a0716cd5a3ac39738e128c391ec34ca beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Pose
 c643c04f33aaefd3f811bc2e525d69bd beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_ResetCount
 998d327d268503470ee64677d4124910 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp
 998d327d268503470ee64677d4124910 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp

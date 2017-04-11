@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/beginner_tutorials_generate_messages_cpp"
   "/home/viki/catkin_ws/devel/include/beginner_tutorials/Num.h"
+  "/home/viki/catkin_ws/devel/include/beginner_tutorials/Pose.h"
   "/home/viki/catkin_ws/devel/include/beginner_tutorials/ResetCount.h"
   "/home/viki/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h"
 )

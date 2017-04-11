@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/viki/catkin_ws/build
 include beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/progress.make
 
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/viki/catkin_ws/devel/include/beginner_tutorials/Num.h
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/viki/catkin_ws/devel/include/beginner_tutorials/Pose.h
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/viki/catkin_ws/devel/include/beginner_tutorials/ResetCount.h
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/viki/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h
 
@@ -56,11 +57,18 @@ beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/vi
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from beginner_tutorials/Num.msg"
 	cd /home/viki/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/viki/catkin_ws/src/beginner_tutorials/msg/Num.msg -Ibeginner_tutorials:/home/viki/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/viki/catkin_ws/devel/include/beginner_tutorials -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/viki/catkin_ws/devel/include/beginner_tutorials/Pose.h: /opt/ros/indigo/lib/gencpp/gen_cpp.py
+/home/viki/catkin_ws/devel/include/beginner_tutorials/Pose.h: /home/viki/catkin_ws/src/beginner_tutorials/msg/Pose.msg
+/home/viki/catkin_ws/devel/include/beginner_tutorials/Pose.h: /opt/ros/indigo/share/gencpp/msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from beginner_tutorials/Pose.msg"
+	cd /home/viki/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/viki/catkin_ws/src/beginner_tutorials/msg/Pose.msg -Ibeginner_tutorials:/home/viki/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/viki/catkin_ws/devel/include/beginner_tutorials -e /opt/ros/indigo/share/gencpp/cmake/..
+
 /home/viki/catkin_ws/devel/include/beginner_tutorials/ResetCount.h: /opt/ros/indigo/lib/gencpp/gen_cpp.py
 /home/viki/catkin_ws/devel/include/beginner_tutorials/ResetCount.h: /home/viki/catkin_ws/src/beginner_tutorials/srv/ResetCount.srv
 /home/viki/catkin_ws/devel/include/beginner_tutorials/ResetCount.h: /opt/ros/indigo/share/gencpp/msg.h.template
 /home/viki/catkin_ws/devel/include/beginner_tutorials/ResetCount.h: /opt/ros/indigo/share/gencpp/srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from beginner_tutorials/ResetCount.srv"
 	cd /home/viki/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/viki/catkin_ws/src/beginner_tutorials/srv/ResetCount.srv -Ibeginner_tutorials:/home/viki/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/viki/catkin_ws/devel/include/beginner_tutorials -e /opt/ros/indigo/share/gencpp/cmake/..
 
@@ -68,12 +76,13 @@ beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/vi
 /home/viki/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /home/viki/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv
 /home/viki/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/indigo/share/gencpp/msg.h.template
 /home/viki/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/indigo/share/gencpp/srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from beginner_tutorials/AddTwoInts.srv"
 	cd /home/viki/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/viki/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv -Ibeginner_tutorials:/home/viki/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/viki/catkin_ws/devel/include/beginner_tutorials -e /opt/ros/indigo/share/gencpp/cmake/..
 
 beginner_tutorials_generate_messages_cpp: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp
 beginner_tutorials_generate_messages_cpp: /home/viki/catkin_ws/devel/include/beginner_tutorials/Num.h
+beginner_tutorials_generate_messages_cpp: /home/viki/catkin_ws/devel/include/beginner_tutorials/Pose.h
 beginner_tutorials_generate_messages_cpp: /home/viki/catkin_ws/devel/include/beginner_tutorials/ResetCount.h
 beginner_tutorials_generate_messages_cpp: /home/viki/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h
 beginner_tutorials_generate_messages_cpp: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/build.make

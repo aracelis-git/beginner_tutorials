@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/beginner_tutorials_generate_messages_py"
   "/home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/_Num.py"
+  "/home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/_Pose.py"
   "/home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/_ResetCount.py"
   "/home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/_AddTwoInts.py"
   "/home/viki/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/__init__.py"

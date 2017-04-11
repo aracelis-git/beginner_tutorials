@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "beginner_tutorials: 1 messages, 2 services")
+message(STATUS "beginner_tutorials: 2 messages, 2 services")
 
 set(MSG_I_FLAGS "-Ibeginner_tutorials:/home/viki/catkin_ws/src/beginner_tutorials/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
@@ -30,6 +30,11 @@ add_custom_target(_beginner_tutorials_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "beginner_tutorials" "/home/viki/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" ""
 )
 
+get_filename_component(_filename "/home/viki/catkin_ws/src/beginner_tutorials/msg/Pose.msg" NAME_WE)
+add_custom_target(_beginner_tutorials_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "beginner_tutorials" "/home/viki/catkin_ws/src/beginner_tutorials/msg/Pose.msg" ""
+)
+
 #
 #  langs = gencpp;genlisp;genpy
 #
@@ -38,6 +43,12 @@ add_custom_target(_beginner_tutorials_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(beginner_tutorials
   "/home/viki/catkin_ws/src/beginner_tutorials/msg/Num.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/beginner_tutorials
+)
+_generate_msg_cpp(beginner_tutorials
+  "/home/viki/catkin_ws/src/beginner_tutorials/msg/Pose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/beginner_tutorials
@@ -75,6 +86,8 @@ get_filename_component(_filename "/home/viki/catkin_ws/src/beginner_tutorials/ms
 add_dependencies(beginner_tutorials_generate_messages_cpp _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/viki/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(beginner_tutorials_generate_messages_cpp _beginner_tutorials_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/viki/catkin_ws/src/beginner_tutorials/msg/Pose.msg" NAME_WE)
+add_dependencies(beginner_tutorials_generate_messages_cpp _beginner_tutorials_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(beginner_tutorials_gencpp)
@@ -87,6 +100,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS beginner_tutorials_generate_message
 ### Generating Messages
 _generate_msg_lisp(beginner_tutorials
   "/home/viki/catkin_ws/src/beginner_tutorials/msg/Num.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/beginner_tutorials
+)
+_generate_msg_lisp(beginner_tutorials
+  "/home/viki/catkin_ws/src/beginner_tutorials/msg/Pose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/beginner_tutorials
@@ -124,6 +143,8 @@ get_filename_component(_filename "/home/viki/catkin_ws/src/beginner_tutorials/ms
 add_dependencies(beginner_tutorials_generate_messages_lisp _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/viki/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(beginner_tutorials_generate_messages_lisp _beginner_tutorials_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/viki/catkin_ws/src/beginner_tutorials/msg/Pose.msg" NAME_WE)
+add_dependencies(beginner_tutorials_generate_messages_lisp _beginner_tutorials_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(beginner_tutorials_genlisp)
@@ -136,6 +157,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS beginner_tutorials_generate_message
 ### Generating Messages
 _generate_msg_py(beginner_tutorials
   "/home/viki/catkin_ws/src/beginner_tutorials/msg/Num.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/beginner_tutorials
+)
+_generate_msg_py(beginner_tutorials
+  "/home/viki/catkin_ws/src/beginner_tutorials/msg/Pose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/beginner_tutorials
@@ -172,6 +199,8 @@ add_dependencies(beginner_tutorials_generate_messages_py _beginner_tutorials_gen
 get_filename_component(_filename "/home/viki/catkin_ws/src/beginner_tutorials/msg/Num.msg" NAME_WE)
 add_dependencies(beginner_tutorials_generate_messages_py _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/viki/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(beginner_tutorials_generate_messages_py _beginner_tutorials_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/viki/catkin_ws/src/beginner_tutorials/msg/Pose.msg" NAME_WE)
 add_dependencies(beginner_tutorials_generate_messages_py _beginner_tutorials_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
