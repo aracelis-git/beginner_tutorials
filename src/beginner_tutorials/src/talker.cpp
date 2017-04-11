@@ -1,6 +1,6 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
-#include "std_msgs/Empty.h"
+#include "beginner_tutorials/Num.h"
 #include "beginner_tutorials/ResetCount.h"
 #include "tf/transform_broadcaster.h"
 
@@ -15,7 +15,7 @@ bool resetCount(beginner_tutorials::ResetCount::Request  &req,
   return true;
 }
 
-void poseCallback(const std_msgs::Empty::ConstPtr& msg)
+void poseCallback(const beginner_tutorials::Num::ConstPtr& msg)
 {
   static tf::TransformBroadcaster br;
   tf::Transform transform;
@@ -70,7 +70,12 @@ int main(int argc, char **argv)
   ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
 
   ros::ServiceServer reset_srv_ = n.advertiseService("Reset_Count", resetCount);
-  ros::Subscriber sub_tf = n.subscribe("talkpose", 10, &poseCallback);
+  int test = 1;
+  beginner_tutorials::Num hi;
+  hi.num = test;
+  //ros::Subscriber sub_tf = n.subscribe("talkpose", 10, &poseCallback);
+
+  //ros::spin();
 
   ros::Rate loop_rate(10);
 
@@ -78,6 +83,7 @@ int main(int argc, char **argv)
    * A count of how many messages we have sent. This is used to create
    * a unique string for each message.
    */
+
   int count = 0;
   while (ros::ok())
   {
@@ -88,7 +94,8 @@ int main(int argc, char **argv)
     std::string message; 
 
     std::stringstream ss;
-    std::cin >> message;
+    //std::cin >> message;
+    message = "hi";
     
     //ss << "hello world " << count;
     ss << message;
@@ -115,11 +122,20 @@ int main(int argc, char **argv)
       ROS_ERROR_STREAM(count << " is divisible by 10.");
     }
 
+      static tf::TransformBroadcaster br;
+  tf::Transform transform;
+  transform.setOrigin( tf::Vector3(-1.0, 1.0, 0.0) );
+  tf::Quaternion q;
+  q.setRPY(0, 0, 15);
+  transform.setRotation(q);
+  br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "world", "talk"));
+
     ros::spinOnce();
 
     loop_rate.sleep();
     ++count;
   }
+
   if(!ros::ok())
   {
 	  ROS_FATAL_STREAM("Program is about to crash.");
